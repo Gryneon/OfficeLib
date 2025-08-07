@@ -4,12 +4,16 @@ Option Compare Text
 Option Base 1
 
 'Web Requests Function Library
-'Version 1.0.0
+'Version 1.0.1
 
 'Imports
 'Microsoft WinHTTP Services, version 5.1
 'Microsoft Scripting Runtime Reference
-'Microsoft ActiveX Data Objects 2.8 Library
+'Microsoft ActiveX Data Objects 6.1 Library
+
+'History
+' 1.0.0 - Initial Verion
+' 1.0.1 - Added SendSQLCommand
 
 Public Function MakeWebRequest(ByVal Method As String, ByVal URL As String, PostData) As String
     ' make sure to include the Microsoft WinHTTP Services in the project
@@ -75,5 +79,43 @@ Public Function ParseJSON(data As String) As Object
     ' use Set when returning an object
     ' Set ParseJSON = Parse(data)
 
+End Function
+
+Public Function SendSQLCommand(server As String, database As String, sqlQuery As String)
+
+  Dim connectionString As String
+  Dim connectObj As New ADODB.Connection
+  Dim commandObj As New ADODB.Command
+  Dim rowsAffected As Long
+  
+  connectionString = "Provider=SQLOLEDB;Data Source=" & server & ";Initial Catalog=" & database & ";Integrated Security=SSPI;"
+  
+  On Error GoTo ErrorHandler
+  
+  connectObj.Open connectionString
+  With commandObj
+    .ActiveConnection = connectObj
+    .CommandText = sqlQuery
+    .CommandType = adCmdText
+    .Execute rowsAffected
+  End With
+  connectObj.Close
+  Set commandObj = Nothing
+  Set connectObj = Nothing
+  
+  Range("SQLResponseCell").Text = rowsAffected & " Rows Affected"
+  
+Exit Function
+
+ErrorHandler:
+  MsgBox "Error: " & Err.Description, vbCritical
+  If Not connectObj Is Nothing Then
+    If connectObj.State = adStateOpen Then connectObj.Close
+  End If
+  Set commandObj = Nothing
+  Set connectObj = Nothing
+  
+  Range("SQLResponseCell").Text = "Error sending data"
+  
 End Function
 

@@ -46,7 +46,7 @@ Public Function IncCode(ByVal inc, Optional ByVal datenumber = DTToday) As Integ
   If datenumber = DTToday Then datenumber = Date
   If datenumber < 0 Then GoTo Invalid
   
-  IncCode = Lng(datenumber) Mod inc
+  IncCode = CLng(datenumber) Mod inc
 Exit Function
   
 Invalid:
@@ -167,4 +167,27 @@ Exit Function
   
 Invalid:
   NextIncOn = CVErr(xlErrValue)
+End Function
+
+Public Function GetColumn(ByRef table As Range, ByVal column As String) As Collection
+ 
+  Dim listobj As ListObject: Set listobj = table.ListObject
+  Dim Result As New Collection
+  
+  
+  Dim col As ListColumn: For Each col In listobj
+  
+    If (col.Name = column) Then
+      Dim cell As Range: For Each cell In col.DataBodyRange.Cells
+        Result.add (cell.Formula2)
+      Next cell
+      GoTo Match
+    End If
+    
+  Next col
+  GetColumn = CVErr(xlErrName)
+Exit Function
+
+Match:
+  GetColumn = Result
 End Function

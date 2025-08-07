@@ -22,7 +22,7 @@ Option Base 1
 Private obj As Style
 
 Property Set StyleObj(ByRef sty As Style)
-  obj = sty
+  Set obj = sty
 End Property
 
 Property Get Name() As String
