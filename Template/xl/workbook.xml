@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x15 xr xr6 xr10 xr2"
+  xmlns:x15="http://schemas.microsoft.com/office/spreadsheetml/2010/11/main"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr6="http://schemas.microsoft.com/office/spreadsheetml/2016/revision6"
+  xmlns:xr10="http://schemas.microsoft.com/office/spreadsheetml/2016/revision10"
+  xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2">
+  <fileVersion appName="xl" lastEdited="7" lowestEdited="7" rupBuild="28526" codeName="{899C9086-67A9-5B14-2C2D-5A8001700F7D}" />
+  <workbookPr codeName="StyledWorkbook" />
+  <mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+    <mc:Choice Requires="x15">
+      <x15ac:absPath url="C:\Users\johntay4\source\repos\Git\OfficeLib\"
+        xmlns:x15ac="http://schemas.microsoft.com/office/spreadsheetml/2010/11/ac" />
+    </mc:Choice>
+  </mc:AlternateContent>
+  <xr:revisionPtr revIDLastSave="0" documentId="8_{BB94E7FE-5472-499D-9E15-593F4C6F556F}" xr6:coauthVersionLast="47" xr6:coauthVersionMax="47" xr10:uidLastSave="{00000000-0000-0000-0000-000000000000}" />
+  <bookViews>
+    <workbookView xWindow="-120" yWindow="-120" windowWidth="29040" windowHeight="15720" xr2:uid="{C81C765E-0E7E-4C5D-9923-593A5E687EB8}" />
+  </bookViews>
+  <sheets>
+    <sheet name="Key" sheetId="2" r:id="rId1" />
+    <sheet name="List" sheetId="1" r:id="rId2" />
+    <sheet name="Sheet1" sheetId="3" r:id="rId3" />
+  </sheets>
+  <functionGroups builtInGroupCount="19" />
+  <definedNames>
+    <definedName name="_xlpm.b" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.cact" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.cell" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.ched" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.chky" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.ckey" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.f" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.o" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.ov" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.ovn" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.p" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.s" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.step1" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="_xlpm.use" hidden="1" xlm="1">#NAME?</definedName>
+    <definedName name="BoolName">BoolTable[Bool]</definedName>
+    <definedName name="BoolYes">BoolValueTable[Y]</definedName>
+    <definedName name="CellFontSize_Override">SizeOverrideTable[Cells]</definedName>
+    <definedName name="ChangeNormalSize_Override">#REF!</definedName>
+    <definedName name="ErrDiv">List!$B$14</definedName>
+    <definedName name="ErrNA">NA()</definedName>
+    <definedName name="ErrName">List!$B$12</definedName>
+    <definedName name="ErrNum">List!$B$11</definedName>
+    <definedName name="ErrSpill">List!$B$13</definedName>
+    <definedName name="ErrStyle">List!$B$15</definedName>
+    <definedName name="ErrValue">List!$B$9</definedName>
+    <definedName name="HeaderFontSize_Override">SizeOverrideTable[Headers]</definedName>
+    <definedName name="SetsFont_Override">#REF!</definedName>
+    <definedName name="SetsFormat_Override">#REF!</definedName>
+    <definedName name="StyleNames">KeyTable[StyleName]</definedName>
+    <definedName name="TitleFontSize_Override">SizeOverrideTable[Cell Title]</definedName>
+  </definedNames>
+  <calcPr calcId="191029" />
+  <extLst>
+    <ext uri="{140A7094-0E35-4892-8432-C4D2E57EDEB5}"
+      xmlns:x15="http://schemas.microsoft.com/office/spreadsheetml/2010/11/main">
+      <x15:workbookPr chartTrackingRefBase="1" />
+    </ext>
+    <ext uri="{B58B0392-4F1F-4190-BB64-5DF3571DCE5F}"
+      xmlns:xcalcf="http://schemas.microsoft.com/office/spreadsheetml/2018/calcfeatures">
+      <xcalcf:calcFeatures>
+        <xcalcf:feature name="microsoft.com:RD" />
+        <xcalcf:feature name="microsoft.com:Single" />
+        <xcalcf:feature name="microsoft.com:FV" />
+        <xcalcf:feature name="microsoft.com:CNMTM" />
+        <xcalcf:feature name="microsoft.com:LET_WF" />
+      </xcalcf:calcFeatures>
+    </ext>
+  </extLst>
+</workbook>

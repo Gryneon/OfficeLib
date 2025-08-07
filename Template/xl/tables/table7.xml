@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="13" xr:uid="{A8A54CDB-0125-4038-911A-432100813CF3}" name="NewTable" displayName="NewTable" ref="E80:G83">
+  <tableColumns count="3">
+    <tableColumn id="1" xr3:uid="{B5DEA632-2684-44B4-8E1E-3DCB0DA0518A}" name="Column1" totalsRowLabel="Total" dataDxfId="27">
+      <calculatedColumnFormula>4</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="2" xr3:uid="{134485BA-02AB-4EAC-957B-AC34B5356A49}" name="Column2" dataDxfId="26">
+      <calculatedColumnFormula>4/NewTable[[#This Row],[Column1]]</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="3" xr3:uid="{C5C5FD05-190E-431D-ACF7-37F865730893}" name="Column3" totalsRowFunction="count" />
+  </tableColumns>
+  <tableStyleInfo name="QueryTable" showFirstColumn="1" showLastColumn="1" showRowStripes="1" showColumnStripes="0" />
+</table>

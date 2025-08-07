@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="14" xr:uid="{FA2A917F-C9B8-45EA-9FB2-EE31AA5C5E02}" name="FontTable" displayName="FontTable" ref="O2:R3" totalsRowShown="0" tableBorderDxfId="3">
+  <tableColumns count="4">
+    <tableColumn id="1" xr3:uid="{A5004194-60BB-433D-8E0E-0CF15C935043}" name="Head" dataCellStyle="Normal" />
+    <tableColumn id="2" xr3:uid="{1393DE11-6B54-4717-B14B-6B5E72D45846}" name="Body" dataDxfId="2" dataCellStyle="Normal" />
+    <tableColumn id="3" xr3:uid="{96471B00-DE13-49DF-A453-FFA669FE7FF5}" name="Mono" dataCellStyle="xMono" />
+    <tableColumn id="4" xr3:uid="{DB125C5E-5FE8-410E-A6B1-7256D3DFA6AC}" name="Cond" dataDxfId="1" />
+  </tableColumns>
+  <tableStyleInfo name="InternalTable" showFirstColumn="0" showLastColumn="0" showRowStripes="1" showColumnStripes="0" />
+</table>

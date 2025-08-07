@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="8" xr:uid="{78B97F38-78AB-45EA-BFEA-0F54EA7A87AB}" name="LookupSampleTable" displayName="LookupSampleTable" ref="E62:G65" totalsRowCount="1">
+  <tableColumns count="3">
+    <tableColumn id="1" xr3:uid="{39355D74-341C-4CEE-9B1A-BB18F0C7A627}" name="LookupKey1" totalsRowLabel="Total:" />
+    <tableColumn id="2" xr3:uid="{D34B602B-F107-4881-B52E-6D0C3A556765}" name="LookupColumn2" />
+    <tableColumn id="3" xr3:uid="{D6F07BD5-B4E5-4FB1-9A46-95D1D5588CE9}" name="CalcColumn" totalsRowFunction="custom" totalsRowDxfId="35" dataCellStyle="CalcCell" totalsRowCellStyle="CalcHd">
+      <calculatedColumnFormula>RIGHT(LookupSampleTable[[#This Row],[LookupColumn2]],5)</calculatedColumnFormula>
+      <totalsRowFormula>COUNTIF(LookupSampleTable[CalcColumn],"Value") &amp; " Value"</totalsRowFormula>
+    </tableColumn>
+  </tableColumns>
+  <tableStyleInfo name="LookupTable" showFirstColumn="1" showLastColumn="0" showRowStripes="0" showColumnStripes="0" />
+</table>

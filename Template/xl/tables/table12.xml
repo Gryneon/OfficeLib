@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="6" xr:uid="{A2DA6A13-FA36-40A9-9798-22BB5C49BE71}" name="SizeOverrideTable" displayName="SizeOverrideTable" ref="J2:L3" totalsRowShown="0" dataDxfId="8" tableBorderDxfId="7">
+  <tableColumns count="3">
+    <tableColumn id="1" xr3:uid="{CE43395E-509B-4D9B-AEE6-3E667D174062}" name="Cell Title" dataDxfId="6" />
+    <tableColumn id="2" xr3:uid="{9B26D6EC-FDDF-4E71-A9C2-E86D018A2279}" name="Headers" dataDxfId="5" />
+    <tableColumn id="3" xr3:uid="{41F1A380-C2EE-499E-A8EB-894C73458495}" name="Cells" dataDxfId="4" />
+  </tableColumns>
+  <tableStyleInfo name="InternalTable" showFirstColumn="0" showLastColumn="0" showRowStripes="0" showColumnStripes="0" />
+</table>

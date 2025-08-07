@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="7" xr:uid="{61424411-8D69-451C-A131-7FF5AA7D2372}" name="KeyTable" displayName="KeyTable" ref="A2:S53" tableBorderDxfId="65">
+  <tableColumns count="19">
+    <tableColumn id="1" xr3:uid="{76068DAB-DC13-445B-857C-6BDE6792A5EF}" name="Cell Name" totalsRowLabel="Total" dataDxfId="64" />
+    <tableColumn id="10" xr3:uid="{7F57117A-3BC3-4A81-9ED4-DF1879D74C06}" name="StyleName" dataDxfId="63">
+      <calculatedColumnFormula>KeyTable[[#This Row],[Class]]&amp;KeyTable[[#This Row],[Type]]</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="17" xr3:uid="{7EB90F7A-0B49-42FA-B346-EDC12516B994}" name="Class" dataDxfId="62" totalsRowDxfId="61" />
+    <tableColumn id="18" xr3:uid="{D2231085-8635-4719-ACB9-2A6FE34360B3}" name="Type" totalsRowDxfId="60" />
+    <tableColumn id="2" xr3:uid="{6D1D03BF-9E42-48E5-9D14-FCB08690EA7A}" name="Where Used" totalsRowDxfId="59" />
+    <tableColumn id="3" xr3:uid="{104032BF-985A-457B-B832-4433AB3EDBFC}" name="Typing Notes" totalsRowDxfId="58" />
+    <tableColumn id="4" xr3:uid="{DB8BFC11-B0D1-4846-A39C-C054A1119787}" name="Warnings" totalsRowDxfId="57" />
+    <tableColumn id="8" xr3:uid="{57BF9228-3F09-4079-ACFD-F5692E34A4C3}" name="Fmt Notes" totalsRowFunction="count" totalsRowDxfId="56" />
+    <tableColumn id="19" xr3:uid="{9F53AF76-EE88-4E0B-AB63-79FFD8D1F0AE}" name="Locked" dataDxfId="55" dataCellStyle="IntCell" />
+    <tableColumn id="9" xr3:uid="{52CAA38C-101F-4454-9B7A-AEE3ED3DF879}" name="Font" dataDxfId="54" dataCellStyle="IntCell" />
+    <tableColumn id="12" xr3:uid="{8CE7029C-941E-490F-8AF7-A660807E5881}" name="Fnt" dataDxfId="53" totalsRowDxfId="52" />
+    <tableColumn id="11" xr3:uid="{97705706-DD43-48D7-A714-6942BBA1BD45}" name="Base" dataDxfId="51" totalsRowDxfId="50" />
+    <tableColumn id="16" xr3:uid="{91C91811-BF5C-47BF-9544-301F1AD32EC9}" name="Pat" dataDxfId="49" totalsRowDxfId="48" />
+    <tableColumn id="13" xr3:uid="{9026655B-F047-4B16-9D83-46C4D12683B8}" name="BOv" dataDxfId="47" totalsRowDxfId="46" />
+    <tableColumn id="14" xr3:uid="{97D396DA-77C8-4EF1-ABB7-86BAAB20B0F4}" name="FOv" dataDxfId="45" totalsRowDxfId="44" />
+    <tableColumn id="15" xr3:uid="{D93B4D51-6EE6-4973-81E1-FBBFBCC42DFF}" name="POv" dataDxfId="43" totalsRowDxfId="42" />
+    <tableColumn id="5" xr3:uid="{3B9668E6-624A-46E5-B3D2-FFFE00082FEB}" name="BgClr" dataDxfId="41" totalsRowDxfId="40" dataCellStyle="CalcVal">
+      <calculatedColumnFormula array="1">_xlfn.LET(
+_xlpm.s, KeyTable[[#This Row],[StyleName]],     _xlpm.o, KeyTable[[#This Row],[BOv]],     _xlpm.b, KeyTable[[#This Row],[Base]],
+_xlpm.ckey, RIGHT(_xlpm.s, 3) = "Key",
+_xlpm.ched, RIGHT(_xlpm.s, 2) = "Hd",
+_xlpm.chky, RIGHT(_xlpm.s, 5) = "HdKey",
+_xlpm.cell, RIGHT(_xlpm.s, 4) = "Cell",
+_xlpm.ovn, _xlpm.o = "N",
+_xlpm.ov, AND(_xlpm.o &lt;&gt; "", NOT(_xlpm.ovn)),
+
+_xlpm.b &amp; _xlfn.IFS( _xlpm.ov, _xlpm.o,    _xlpm.ovn, "",     _xlpm.chky, "D50",      _xlpm.ched, "D25",     _xlpm.ckey, "L40",      _xlpm.cell, "L60",      TRUE, "" ))</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="6" xr3:uid="{479C343B-CBF8-4141-96F0-6C8702FBF17D}" name="TxClr" dataDxfId="39" totalsRowDxfId="38" dataCellStyle="CalcVal">
+      <calculatedColumnFormula array="1">_xlfn.LET(
+_xlpm.s, KeyTable[[#This Row],[StyleName]],     _xlpm.f, KeyTable[[#This Row],[Fnt]],       _xlpm.o, KeyTable[[#This Row],[FOv]],
+_xlpm.ovn, _xlpm.o = "N",
+_xlpm.ov, AND(_xlpm.o &lt;&gt; "", NOT(_xlpm.ovn)),
+_xlpm.ched, RIGHT(_xlpm.s, 2) = "Hd",
+_xlpm.chky, OR(RIGHT(_xlpm.s, 5) = "HdKey", RIGHT(_xlpm.s, 5) = "Title"),
+_xlpm.cact, LEFT(_xlpm.s, 3) = "Act",
+
+_xlpm.f &amp; _xlfn.IFS( _xlpm.ov, _xlpm.o,      _xlpm.ovn, "",      _xlpm.cact, "D50",       OR(_xlpm.chky,_xlpm.ched), "L80",     TRUE, "" ))</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="7" xr3:uid="{4B487879-F9F5-4BFD-8760-E41888F50C6B}" name="PtClr" dataDxfId="37" totalsRowDxfId="36" dataCellStyle="CalcVal">
+      <calculatedColumnFormula array="1" xml:space="preserve"> _xlfn.LET(  _xlpm.p, KeyTable[[#This Row],[Pat]],    _xlpm.o, KeyTable[[#This Row],[POv]],
+_xlpm.use, NOT(ISBLANK(_xlpm.p)),
+_xlpm.ov, _xlfn.IFS( _xlpm.o = "N", "",       _xlpm.o = "", "L80",       TRUE, _xlpm.o),
+
+IF(_xlpm.use, _xlpm.p &amp; _xlpm.ov, ""))</calculatedColumnFormula>
+    </tableColumn>
+  </tableColumns>
+  <tableStyleInfo name="InternalTable" showFirstColumn="1" showLastColumn="0" showRowStripes="0" showColumnStripes="0" />
+</table>

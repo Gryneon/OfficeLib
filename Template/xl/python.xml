@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<python xmlns="http://schemas.microsoft.com/office/spreadsheetml/2023/python">
+  <environmentDefinition id="{882DD1B0-6546-4DFA-8A08-902A380B44EA}">
+    <initialization>
+      <code xml:space="preserve">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels as sm
+import excel
+import warnings
+
+warnings.simplefilter('ignore')
+
+excel.set_xl_scalar_conversion(excel.convert_to_scalar)
+excel.set_xl_array_conversion(excel.convert_to_dataframe)
+      </code>
+    </initialization>
+  </environmentDefinition>
+</python>

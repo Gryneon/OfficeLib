@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="12" xr:uid="{433934CE-686F-4988-BC24-951C1ECDE351}" name="QuerySampleTable" displayName="QuerySampleTable" ref="E74:G77" totalsRowCount="1">
+  <tableColumns count="3">
+    <tableColumn id="1" xr3:uid="{7A313683-44AB-47A6-8ABC-1C83577B1A6B}" name="QueryKey1" totalsRowLabel="Total:" />
+    <tableColumn id="2" xr3:uid="{9EF07AED-856A-4F07-A75D-D396829D1E92}" name="QueryColumn2" totalsRowFunction="custom">
+      <totalsRowFormula>COUNTIF(QuerySampleTable[QueryColumn2],"* Error")&amp;" Error in Col"</totalsRowFormula>
+    </tableColumn>
+    <tableColumn id="3" xr3:uid="{9B6D6A2F-3BCF-4757-AE12-FE41C67BD4C5}" name="CalcColumn3" totalsRowFunction="custom" dataCellStyle="CalcCell" totalsRowCellStyle="CalcHd">
+      <calculatedColumnFormula>QuerySampleTable[[#This Row],[QueryColumn2]]  = "Query Value"</calculatedColumnFormula>
+      <totalsRowFormula>IF(_xlfn.XMATCH(FALSE, QuerySampleTable[CalcColumn3],0,1) &gt; 0,  "&gt;0  Falses in Column", "Column Good")</totalsRowFormula>
+    </tableColumn>
+  </tableColumns>
+  <tableStyleInfo name="QueryTable" showFirstColumn="1" showLastColumn="1" showRowStripes="0" showColumnStripes="0" />
+</table>

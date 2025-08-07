@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="686" uniqueCount="267">
+  <si>
+    <t>Boolean Values</t>
+  </si>
+  <si>
+    <t>Bool</t>
+  </si>
+  <si>
+    <t>YN</t>
+  </si>
+  <si>
+    <t>BoolName</t>
+  </si>
+  <si>
+    <t>YNName</t>
+  </si>
+  <si>
+    <t>Cell Title</t>
+  </si>
+  <si>
+    <t>Headers</t>
+  </si>
+  <si>
+    <t>Cells</t>
+  </si>
+  <si>
+    <t>Yes</t>
+  </si>
+  <si>
+    <t>Y</t>
+  </si>
+  <si>
+    <t>N</t>
+  </si>
+  <si>
+    <t>No</t>
+  </si>
+  <si>
+    <t>N/A</t>
+  </si>
+  <si>
+    <t>Table Color Explanations</t>
+  </si>
+  <si>
+    <t>Conditional Formatting</t>
+  </si>
+  <si>
+    <t>Opt</t>
+  </si>
+  <si>
+    <t>Cell Name</t>
+  </si>
+  <si>
+    <t>StyleName</t>
+  </si>
+  <si>
+    <t>Where Used</t>
+  </si>
+  <si>
+    <t>Typing Notes</t>
+  </si>
+  <si>
+    <t>Warnings</t>
+  </si>
+  <si>
+    <t>Fmt Notes</t>
+  </si>
+  <si>
+    <t>Font</t>
+  </si>
+  <si>
+    <t>Fnt</t>
+  </si>
+  <si>
+    <t>Base</t>
+  </si>
+  <si>
+    <t>Pat</t>
+  </si>
+  <si>
+    <t>BOv</t>
+  </si>
+  <si>
+    <t>FOv</t>
+  </si>
+  <si>
+    <t>POv</t>
+  </si>
+  <si>
+    <t>BgClr</t>
+  </si>
+  <si>
+    <t>TxClr</t>
+  </si>
+  <si>
+    <t>PtClr</t>
+  </si>
+  <si>
+    <t>Column1</t>
+  </si>
+  <si>
+    <t>Column2</t>
+  </si>
+  <si>
+    <t>Column3</t>
+  </si>
+  <si>
+    <t>Result</t>
+  </si>
+  <si>
+    <t>UseCol3</t>
+  </si>
+  <si>
+    <t>Calculated Key Header</t>
+  </si>
+  <si>
+    <t>Table Headers, Total Rows</t>
+  </si>
+  <si>
+    <t>Do not type in this cell</t>
+  </si>
+  <si>
+    <t>Cell will contain a formula or header</t>
+  </si>
+  <si>
+    <t>Txt Fmt</t>
+  </si>
+  <si>
+    <t>B1</t>
+  </si>
+  <si>
+    <t>T2</t>
+  </si>
+  <si>
+    <t>Value</t>
+  </si>
+  <si>
+    <t>Calculated Header</t>
+  </si>
+  <si>
+    <t>CalcHd</t>
+  </si>
+  <si>
+    <t>T1</t>
+  </si>
+  <si>
+    <t>L35</t>
+  </si>
+  <si>
+    <t>BadValue</t>
+  </si>
+  <si>
+    <t>Calculated Key</t>
+  </si>
+  <si>
+    <t>Tables, Output Cells</t>
+  </si>
+  <si>
+    <t>Cell will contain a formula</t>
+  </si>
+  <si>
+    <t>B2</t>
+  </si>
+  <si>
+    <t>D25</t>
+  </si>
+  <si>
+    <t>Calculated D/V</t>
+  </si>
+  <si>
+    <t>D15</t>
+  </si>
+  <si>
+    <t>Caution</t>
+  </si>
+  <si>
+    <t>Calculated Cell</t>
+  </si>
+  <si>
+    <t>CalcCell</t>
+  </si>
+  <si>
+    <t>D5</t>
+  </si>
+  <si>
+    <t>Deactivated Key Header</t>
+  </si>
+  <si>
+    <t>Column has been deactivated by a formula</t>
+  </si>
+  <si>
+    <t>Pattern Set, Txt Fmt</t>
+  </si>
+  <si>
+    <t>Deactivated Header</t>
+  </si>
+  <si>
+    <t>L50</t>
+  </si>
+  <si>
+    <t>Deactivated Cell</t>
+  </si>
+  <si>
+    <t>Tables, Input Cells, Output Cells</t>
+  </si>
+  <si>
+    <t>Cell has been deactivated by a formula</t>
+  </si>
+  <si>
+    <t>Active Disabled</t>
+  </si>
+  <si>
+    <t>Pattern Set, Italics</t>
+  </si>
+  <si>
+    <t>Box Title (16 pt Font)</t>
+  </si>
+  <si>
+    <t>Top of Sheets, Tables, &amp; Objects</t>
+  </si>
+  <si>
+    <t>Cell will contain a header</t>
+  </si>
+  <si>
+    <t>Cent HV, 16 Pt, Txt Fmt</t>
+  </si>
+  <si>
+    <t>A1</t>
+  </si>
+  <si>
+    <t>D50</t>
+  </si>
+  <si>
+    <t>Box Key Header</t>
+  </si>
+  <si>
+    <t>Centered HV, Txt Fmt</t>
+  </si>
+  <si>
+    <t>Box Header</t>
+  </si>
+  <si>
+    <t>BoxHd</t>
+  </si>
+  <si>
+    <t>Box Key</t>
+  </si>
+  <si>
+    <t>Sheet, Table, &amp; Object Options</t>
+  </si>
+  <si>
+    <t>Type in this cell</t>
+  </si>
+  <si>
+    <t>None</t>
+  </si>
+  <si>
+    <t>Centered HV</t>
+  </si>
+  <si>
+    <t>Box D/V</t>
+  </si>
+  <si>
+    <t>L60</t>
+  </si>
+  <si>
+    <t>Box Cell</t>
+  </si>
+  <si>
+    <t>BoxCell</t>
+  </si>
+  <si>
+    <t>L80</t>
+  </si>
+  <si>
+    <t>Active Note</t>
+  </si>
+  <si>
+    <t>Notes and Instructions</t>
+  </si>
+  <si>
+    <t>Cell will contain information</t>
+  </si>
+  <si>
+    <t>Cent HV, P Set, Ital, Txt Fmt</t>
+  </si>
+  <si>
+    <t>Input Key Header</t>
+  </si>
+  <si>
+    <t>A2</t>
+  </si>
+  <si>
+    <t>Input Header</t>
+  </si>
+  <si>
+    <t>InpHd</t>
+  </si>
+  <si>
+    <t>Input Key</t>
+  </si>
+  <si>
+    <t>Tables, Input Cells</t>
+  </si>
+  <si>
+    <t>Input Date</t>
+  </si>
+  <si>
+    <t>Date Format</t>
+  </si>
+  <si>
+    <t>Input Value</t>
+  </si>
+  <si>
+    <t>Input Cell</t>
+  </si>
+  <si>
+    <t>InpCell</t>
+  </si>
+  <si>
+    <t>Active Missing</t>
+  </si>
+  <si>
+    <t>Data Required</t>
+  </si>
+  <si>
+    <t>Error Key Header</t>
+  </si>
+  <si>
+    <t>A3</t>
+  </si>
+  <si>
+    <t>Error Header</t>
+  </si>
+  <si>
+    <t>ErrHd</t>
+  </si>
+  <si>
+    <t>Table Headers</t>
+  </si>
+  <si>
+    <t>Cell in this column has an error</t>
+  </si>
+  <si>
+    <t>Error Key</t>
+  </si>
+  <si>
+    <t>Cell in this row has an error</t>
+  </si>
+  <si>
+    <t>Error D/V</t>
+  </si>
+  <si>
+    <t>A related cell has an error</t>
+  </si>
+  <si>
+    <t>Error Cell</t>
+  </si>
+  <si>
+    <t>ErrCell</t>
+  </si>
+  <si>
+    <t>Active Error</t>
+  </si>
+  <si>
+    <t>Tables</t>
+  </si>
+  <si>
+    <t>This cell has an error</t>
+  </si>
+  <si>
+    <t>Lookup Key Header</t>
+  </si>
+  <si>
+    <t>A4</t>
+  </si>
+  <si>
+    <t>Lookup Header</t>
+  </si>
+  <si>
+    <t>LkpHd</t>
+  </si>
+  <si>
+    <t>Lookup Key</t>
+  </si>
+  <si>
+    <t>Tables, Reference Cells</t>
+  </si>
+  <si>
+    <t>Cell contains referenced data</t>
+  </si>
+  <si>
+    <t>Lookup Date</t>
+  </si>
+  <si>
+    <t>Cell contains a referenced value</t>
+  </si>
+  <si>
+    <t>Lookup Value</t>
+  </si>
+  <si>
+    <t>Lookup Cell</t>
+  </si>
+  <si>
+    <t>LkpCell</t>
+  </si>
+  <si>
+    <t>Active Lookup Not Found</t>
+  </si>
+  <si>
+    <t>Query Key Header</t>
+  </si>
+  <si>
+    <t>A5</t>
+  </si>
+  <si>
+    <t>Query Header</t>
+  </si>
+  <si>
+    <t>QueHd</t>
+  </si>
+  <si>
+    <t>Query Key</t>
+  </si>
+  <si>
+    <t>Cell will contain a formula or query output</t>
+  </si>
+  <si>
+    <t>Query D/V</t>
+  </si>
+  <si>
+    <t>Query Cell</t>
+  </si>
+  <si>
+    <t>QueCell</t>
+  </si>
+  <si>
+    <t>Active Good</t>
+  </si>
+  <si>
+    <t>L40</t>
+  </si>
+  <si>
+    <t>Internal Key Header</t>
+  </si>
+  <si>
+    <t>Cell changes may cause loss of functionality</t>
+  </si>
+  <si>
+    <t>A6</t>
+  </si>
+  <si>
+    <t>Internal Header</t>
+  </si>
+  <si>
+    <t>IntHd</t>
+  </si>
+  <si>
+    <t>Internal Key</t>
+  </si>
+  <si>
+    <t>Internal D/V</t>
+  </si>
+  <si>
+    <t>Internal Cell</t>
+  </si>
+  <si>
+    <t>IntCell</t>
+  </si>
+  <si>
+    <t>Internal Note</t>
+  </si>
+  <si>
+    <t>Tables, Output Cells, Labels</t>
+  </si>
+  <si>
+    <t>P Set, Ital, Txt Fmt</t>
+  </si>
+  <si>
+    <t>Other Cell Styles</t>
+  </si>
+  <si>
+    <t>Normal</t>
+  </si>
+  <si>
+    <t>xCond</t>
+  </si>
+  <si>
+    <t>xMono</t>
+  </si>
+  <si>
+    <t>HyperLink</t>
+  </si>
+  <si>
+    <t>Standard Text</t>
+  </si>
+  <si>
+    <t>Tight Text</t>
+  </si>
+  <si>
+    <t>Monospaced Text</t>
+  </si>
+  <si>
+    <t>#0563C1 B,UL Bahnschrift 11pt</t>
+  </si>
+  <si>
+    <t>Bahnschrift 11pt</t>
+  </si>
+  <si>
+    <t>Bahnschrift Condensed 11pt</t>
+  </si>
+  <si>
+    <t>Followed Hyperlink</t>
+  </si>
+  <si>
+    <t>Sets Font Only</t>
+  </si>
+  <si>
+    <t>#954F72 B,UL Bahnschrift 11pt</t>
+  </si>
+  <si>
+    <t>Lookup Table</t>
+  </si>
+  <si>
+    <t>LookupKey1</t>
+  </si>
+  <si>
+    <t>LookupColumn2</t>
+  </si>
+  <si>
+    <t>CalcColumn</t>
+  </si>
+  <si>
+    <t>KeyCell 1</t>
+  </si>
+  <si>
+    <t>Lookup Referenced Value</t>
+  </si>
+  <si>
+    <t>KeyCell 2</t>
+  </si>
+  <si>
+    <t>Total:</t>
+  </si>
+  <si>
+    <t>Internal Table</t>
+  </si>
+  <si>
+    <t>Key1</t>
+  </si>
+  <si>
+    <t>Internal2</t>
+  </si>
+  <si>
+    <t>CalcColumn3</t>
+  </si>
+  <si>
+    <t>IntKey 1</t>
+  </si>
+  <si>
+    <t>IntKey 2</t>
+  </si>
+  <si>
+    <t>Query Table</t>
+  </si>
+  <si>
+    <t>QueryKey1</t>
+  </si>
+  <si>
+    <t>QueryColumn2</t>
+  </si>
+  <si>
+    <t>QueKey 1</t>
+  </si>
+  <si>
+    <t>Query Value</t>
+  </si>
+  <si>
+    <t>QueKey 2</t>
+  </si>
+  <si>
+    <t>Query Error</t>
+  </si>
+  <si>
+    <t>Added Title</t>
+  </si>
+  <si>
+    <t>OCR A Extended</t>
+  </si>
+  <si>
+    <t>Body</t>
+  </si>
+  <si>
+    <t>Mono</t>
+  </si>
+  <si>
+    <t>Bahnschrift</t>
+  </si>
+  <si>
+    <t>Bahnschrift Condensed</t>
+  </si>
+  <si>
+    <t>Default Fonts</t>
+  </si>
+  <si>
+    <t>Error</t>
+  </si>
+  <si>
+    <t>Num</t>
+  </si>
+  <si>
+    <t>OCR A Extended 11pt</t>
+  </si>
+  <si>
+    <t>Name</t>
+  </si>
+  <si>
+    <t>Spill</t>
+  </si>
+  <si>
+    <t>Div/0</t>
+  </si>
+  <si>
+    <t>Type</t>
+  </si>
+  <si>
+    <t>CellStyle</t>
+  </si>
+  <si>
+    <t>HeadStyle</t>
+  </si>
+  <si>
+    <t>Internal</t>
+  </si>
+  <si>
+    <t>InternalTable</t>
+  </si>
+  <si>
+    <t>Query</t>
+  </si>
+  <si>
+    <t>Input</t>
+  </si>
+  <si>
+    <t>Lookup</t>
+  </si>
+  <si>
+    <t>Calculated</t>
+  </si>
+  <si>
+    <t>Box</t>
+  </si>
+  <si>
+    <t>QueryTable</t>
+  </si>
+  <si>
+    <t>LookupTable</t>
+  </si>
+  <si>
+    <t>BoxTable</t>
+  </si>
+  <si>
+    <t>ErrorTable</t>
+  </si>
+  <si>
+    <t>InputTable</t>
+  </si>
+  <si>
+    <t>CalculatedTable</t>
+  </si>
+  <si>
+    <t>Class</t>
+  </si>
+  <si>
+    <t>Calc</t>
+  </si>
+  <si>
+    <t>Deac</t>
+  </si>
+  <si>
+    <t>Inp</t>
+  </si>
+  <si>
+    <t>Act</t>
+  </si>
+  <si>
+    <t>Err</t>
+  </si>
+  <si>
+    <t>Lkp</t>
+  </si>
+  <si>
+    <t>Que</t>
+  </si>
+  <si>
+    <t>Int</t>
+  </si>
+  <si>
+    <t>HdKey</t>
+  </si>
+  <si>
+    <t>Hd</t>
+  </si>
+  <si>
+    <t>Key</t>
+  </si>
+  <si>
+    <t>Val</t>
+  </si>
+  <si>
+    <t>Cell</t>
+  </si>
+  <si>
+    <t>Date</t>
+  </si>
+  <si>
+    <t>Find</t>
+  </si>
+  <si>
+    <t>Good</t>
+  </si>
+  <si>
+    <t>Note</t>
+  </si>
+  <si>
+    <t>Miss</t>
+  </si>
+  <si>
+    <t>Title</t>
+  </si>
+  <si>
+    <t>#STYLE!</t>
+  </si>
+  <si>
+    <t>Style</t>
+  </si>
+  <si>
+    <t>ErrStyle</t>
+  </si>
+  <si>
+    <t>ErrDiv</t>
+  </si>
+  <si>
+    <t>ErrSpill</t>
+  </si>
+  <si>
+    <t>ErrName</t>
+  </si>
+  <si>
+    <t>ErrNum</t>
+  </si>
+  <si>
+    <t>ErrValue</t>
+  </si>
+  <si>
+    <t>ErrNa</t>
+  </si>
+  <si>
+    <t>TableTypeTable</t>
+  </si>
+  <si>
+    <t>SizeOverrideTable</t>
+  </si>
+  <si>
+    <t>Cond</t>
+  </si>
+  <si>
+    <t>Head</t>
+  </si>
+  <si>
+    <t>Normal Cell</t>
+  </si>
+  <si>
+    <t>Blank Cells, Table controlled</t>
+  </si>
+  <si>
+    <t>Context Dependent</t>
+  </si>
+  <si>
+    <t>Normal Set</t>
+  </si>
+  <si>
+    <t>Locked</t>
+  </si>
+  <si>
+    <t>IGNORE</t>
+  </si>
+  <si>
+    <t>Condensed Font</t>
+  </si>
+  <si>
+    <t>Monospace Font</t>
+  </si>
+  <si>
+    <t>x</t>
+  </si>
+  <si>
+    <t>Any Required Cell</t>
+  </si>
+  <si>
+    <t>Font Set</t>
+  </si>
+</sst>

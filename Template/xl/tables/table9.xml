@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="2" xr:uid="{274A0CDA-7146-43CB-ABC8-75E582EC1F77}" name="BoolValueTable" displayName="BoolValueTable" ref="E3:F4" totalsRowShown="0" headerRowDxfId="21" dataDxfId="20" tableBorderDxfId="19" headerRowCellStyle="LkpHdKey" dataCellStyle="LkpKey">
+  <tableColumns count="2">
+    <tableColumn id="1" xr3:uid="{21F6AF6E-BC39-4E4D-96F8-2A8030E0361E}" name="Y" dataDxfId="18" dataCellStyle="LkpKey">
+      <calculatedColumnFormula array="1">OFFSET( BoolName, 0, 0, 1, 1)</calculatedColumnFormula>
+    </tableColumn>
+    <tableColumn id="3" xr3:uid="{83460445-1457-46BA-8264-4B62AABBEE2F}" name="N" dataDxfId="17" dataCellStyle="LkpKey">
+      <calculatedColumnFormula array="1">OFFSET( BoolName, 1, 0, 1, 1)</calculatedColumnFormula>
+    </tableColumn>
+  </tableColumns>
+  <tableStyleInfo name="LookupTable" showFirstColumn="1" showLastColumn="0" showRowStripes="0" showColumnStripes="0" />
+</table>

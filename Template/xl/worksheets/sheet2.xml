@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing"
+  xmlns:x14="http://schemas.microsoft.com/office/spreadsheetml/2009/9/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac xr xr2 xr3"
+  xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr2="http://schemas.microsoft.com/office/spreadsheetml/2015/revision2"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" xr:uid="{1BE68130-5567-4C58-8970-BD4C03F76E8E}">
+  <sheetPr codeName="ListSheet">
+    <tabColor theme="6" tint="-0.249977111117893" />
+  </sheetPr>
+  <dimension ref="A1:R15" />
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <selection activeCell="E16" sqref="E16" />
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="14.25" customHeight="1" x14ac:dyDescent="0.2" />
+  <cols>
+    <col min="1" max="1" width="6.33203125" customWidth="1" />
+    <col min="2" max="2" width="8.109375" customWidth="1" />
+    <col min="3" max="3" width="9" customWidth="1" />
+    <col min="4" max="4" width="8.77734375" customWidth="1" />
+    <col min="5" max="5" width="9.44140625" customWidth="1" />
+    <col min="6" max="6" width="14" customWidth="1" />
+    <col min="7" max="7" width="9.21875" customWidth="1" />
+    <col min="8" max="8" width="8.109375" customWidth="1" />
+    <col min="9" max="9" width="8.77734375" customWidth="1" />
+    <col min="10" max="10" width="8" customWidth="1" />
+    <col min="11" max="11" width="7.77734375" customWidth="1" />
+    <col min="12" max="12" width="4.88671875" customWidth="1" />
+    <col min="13" max="14" width="8.77734375" customWidth="1" />
+    <col min="15" max="16" width="10.44140625" customWidth="1" />
+    <col min="17" max="17" width="16.44140625" customWidth="1" />
+    <col min="18" max="18" width="14.88671875" customWidth="1" />
+  </cols>
+  <sheetData>
+    <row r="1" spans="1:18" ht="19.5" x14ac:dyDescent="0.2">
+      <c r="A1" s="169" t="s">
+        <v>0</v>
+      </c>
+      <c r="B1" s="170" />
+      <c r="C1" s="170" />
+      <c r="D1" s="170" />
+      <c r="E1" s="170" />
+      <c r="F1" s="170" />
+      <c r="G1" s="170" />
+      <c r="H1" s="171" />
+      <c r="J1" s="180" t="s">
+        <v>253</v>
+      </c>
+      <c r="K1" s="181" />
+      <c r="L1" s="181" />
+      <c r="M1" s="182" />
+      <c r="N1" s="182" />
+      <c r="O1" s="177" t="s">
+        <v>200</v>
+      </c>
+      <c r="P1" s="178" />
+      <c r="Q1" s="178" />
+      <c r="R1" s="179" />
+    </row>
+    <row r="2" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A2" s="1" t="s">
+        <v>1</v>
+      </c>
+      <c r="B2" s="1" t="s">
+        <v>2</v>
+      </c>
+      <c r="C2" s="1" />
+      <c r="E2" s="184" t="s">
+        <v>3</v>
+      </c>
+      <c r="F2" s="185" />
+      <c r="G2" s="186" t="s">
+        <v>4</v>
+      </c>
+      <c r="H2" s="187" />
+      <c r="J2" t="s">
+        <v>5</v>
+      </c>
+      <c r="K2" t="s">
+        <v>6</v>
+      </c>
+      <c r="L2" t="s">
+        <v>7</v>
+      </c>
+      <c r="M2" s="182" />
+      <c r="N2" s="183" />
+      <c r="O2" t="s">
+        <v>255</v>
+      </c>
+      <c r="P2" t="s">
+        <v>196</v>
+      </c>
+      <c r="Q2" t="s">
+        <v>197</v>
+      </c>
+      <c r="R2" t="s">
+        <v>254</v>
+      </c>
+    </row>
+    <row r="3" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A3" s="1" t="b">
+        <v>1</v>
+      </c>
+      <c r="B3" s="1" t="s">
+        <v>8</v>
+      </c>
+      <c r="C3" s="1" />
+      <c r="E3" s="2" t="s">
+        <v>9</v>
+      </c>
+      <c r="F3" s="2" t="s">
+        <v>10</v>
+      </c>
+      <c r="G3" s="2" t="s">
+        <v>9</v>
+      </c>
+      <c r="H3" s="2" t="s">
+        <v>10</v>
+      </c>
+      <c r="J3" s="1">
+        <v>16</v>
+      </c>
+      <c r="K3" s="1">
+        <v>11</v>
+      </c>
+      <c r="L3" s="1">
+        <v>11</v>
+      </c>
+      <c r="M3" s="182" />
+      <c r="N3" s="183" />
+      <c r="O3" t="s">
+        <v>198</v>
+      </c>
+      <c r="P3" s="86" t="s">
+        <v>198</v>
+      </c>
+      <c r="Q3" s="85" t="s">
+        <v>195</v>
+      </c>
+      <c r="R3" s="148" t="s">
+        <v>199</v>
+      </c>
+    </row>
+    <row r="4" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A4" s="1" t="b">
+        <v>0</v>
+      </c>
+      <c r="B4" s="1" t="s">
+        <v>11</v>
+      </c>
+      <c r="C4" s="1" />
+      <c r="E4" s="84" t="b" cm="1">
+        <f t="array" aca="1" ref="E4" ca="1">OFFSET( BoolName, 0, 0, 1, 1)</f>
+        <v>1</v>
+      </c>
+      <c r="F4" s="84" t="b" cm="1">
+        <f t="array" aca="1" ref="F4" ca="1">OFFSET( BoolName, 1, 0, 1, 1)</f>
+        <v>0</v>
+      </c>
+      <c r="G4" s="84" t="str">
+        <f ca="1">OFFSET( YNTable[], 0, 0, 1, 1)</f>
+        <v>Yes</v>
+      </c>
+      <c r="H4" s="84" t="str">
+        <f ca="1">OFFSET( YNTable[], 1, 0, 1, 1)</f>
+        <v>No</v>
+      </c>
+    </row>
+    <row r="5" spans="1:18" x14ac:dyDescent="0.2" />
+    <row r="6" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A6" s="1" />
+    </row>
+    <row r="7" spans="1:18" ht="19.5" x14ac:dyDescent="0.2">
+      <c r="A7" s="176" t="s">
+        <v>220</v>
+      </c>
+      <c r="B7" s="176" />
+      <c r="C7" s="176" />
+      <c r="E7" s="176" t="s">
+        <v>252</v>
+      </c>
+      <c r="F7" s="176" />
+      <c r="G7" s="176" />
+      <c r="H7" s="176" />
+    </row>
+    <row r="8" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A8" t="s">
+        <v>201</v>
+      </c>
+      <c r="B8" t="s">
+        <v>44</v>
+      </c>
+      <c r="C8" t="s">
+        <v>204</v>
+      </c>
+      <c r="E8" t="s">
+        <v>207</v>
+      </c>
+      <c r="F8" t="s">
+        <v>17</v>
+      </c>
+      <c r="G8" t="s">
+        <v>209</v>
+      </c>
+      <c r="H8" t="s">
+        <v>208</v>
+      </c>
+    </row>
+    <row r="9" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A9" t="s">
+        <v>44</v>
+      </c>
+      <c r="B9" t="e">
+        <f>#VALUE!</f>
+        <v>#VALUE!</v>
+      </c>
+      <c r="C9" t="s">
+        <v>250</v>
+      </c>
+      <c r="E9" t="s">
+        <v>210</v>
+      </c>
+      <c r="F9" t="s">
+        <v>211</v>
+      </c>
+      <c r="G9" t="s">
+        <v>151</v>
+      </c>
+      <c r="H9" t="s">
+        <v>155</v>
+      </c>
+    </row>
+    <row r="10" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A10" t="s">
+        <v>12</v>
+      </c>
+      <c r="B10" t="e">
+        <f>NA()</f>
+        <v>#N/A</v>
+      </c>
+      <c r="C10" t="s">
+        <v>251</v>
+      </c>
+      <c r="E10" t="s">
+        <v>212</v>
+      </c>
+      <c r="F10" t="s">
+        <v>217</v>
+      </c>
+      <c r="G10" t="s">
+        <v>139</v>
+      </c>
+      <c r="H10" t="s">
+        <v>144</v>
+      </c>
+    </row>
+    <row r="11" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A11" t="s">
+        <v>202</v>
+      </c>
+      <c r="B11" t="e">
+        <f>SQRT(-1)</f>
+        <v>#NUM!</v>
+      </c>
+      <c r="C11" t="s">
+        <v>249</v>
+      </c>
+      <c r="E11" t="s">
+        <v>213</v>
+      </c>
+      <c r="F11" t="s">
+        <v>221</v>
+      </c>
+      <c r="G11" t="s">
+        <v>98</v>
+      </c>
+      <c r="H11" t="s">
+        <v>105</v>
+      </c>
+    </row>
+    <row r="12" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A12" t="s">
+        <v>204</v>
+      </c>
+      <c r="B12" t="e" cm="1">
+        <f t="array" ref="B12">noname</f>
+        <v>#NAME?</v>
+      </c>
+      <c r="C12" t="s">
+        <v>248</v>
+      </c>
+      <c r="E12" t="s">
+        <v>214</v>
+      </c>
+      <c r="F12" t="s">
+        <v>218</v>
+      </c>
+      <c r="G12" t="s">
+        <v>126</v>
+      </c>
+      <c r="H12" t="s">
+        <v>134</v>
+      </c>
+    </row>
+    <row r="13" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A13" t="s">
+        <v>205</v>
+      </c>
+      <c r="B13" t="e" cm="1" vm="1">
+        <f t="array" aca="1" ref="B13" ca="1">J8:L11</f>
+        <v>#VALUE!</v>
+      </c>
+      <c r="C13" t="s">
+        <v>247</v>
+      </c>
+      <c r="E13" t="s">
+        <v>215</v>
+      </c>
+      <c r="F13" t="s">
+        <v>222</v>
+      </c>
+      <c r="G13" t="s">
+        <v>46</v>
+      </c>
+      <c r="H13" t="s">
+        <v>59</v>
+      </c>
+    </row>
+    <row r="14" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A14" t="s">
+        <v>206</v>
+      </c>
+      <c r="B14" t="e">
+        <f>4/0</f>
+        <v>#DIV/0!</v>
+      </c>
+      <c r="C14" t="s">
+        <v>246</v>
+      </c>
+      <c r="E14" t="s">
+        <v>216</v>
+      </c>
+      <c r="F14" t="s">
+        <v>219</v>
+      </c>
+      <c r="G14" t="s">
+        <v>80</v>
+      </c>
+      <c r="H14" t="s">
+        <v>89</v>
+      </c>
+    </row>
+    <row r="15" spans="1:18" x14ac:dyDescent="0.2">
+      <c r="A15" s="1" t="s">
+        <v>244</v>
+      </c>
+      <c r="B15" s="1" t="s">
+        <v>243</v>
+      </c>
+      <c r="C15" s="147" t="s">
+        <v>245</v>
+      </c>
+      <c r="E15" t="s">
+        <v>201</v>
+      </c>
+      <c r="F15" t="s">
+        <v>220</v>
+      </c>
+      <c r="G15" t="s">
+        <v>111</v>
+      </c>
+      <c r="H15" t="s">
+        <v>119</v>
+      </c>
+    </row>
+  </sheetData>
+  <mergeCells count="8">
+    <mergeCell ref="E7:H7" />
+    <mergeCell ref="A7:C7" />
+    <mergeCell ref="O1:R1" />
+    <mergeCell ref="A1:H1" />
+    <mergeCell ref="J1:L1" />
+    <mergeCell ref="M1:N3" />
+    <mergeCell ref="E2:F2" />
+    <mergeCell ref="G2:H2" />
+  </mergeCells>
+  <dataValidations count="1">
+    <dataValidation type="list" allowBlank="1" sqref="G9:H15" xr:uid="{635700D7-A826-46D0-9E0A-D7A602E14792}">
+      <formula1>StyleNames</formula1>
+    </dataValidation>
+  </dataValidations>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3" />
+  <pageSetup orientation="portrait" r:id="rId1" />
+  <drawing r:id="rId2" />
+  <legacyDrawing r:id="rId3" />
+  <mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+    <mc:Choice Requires="x14">
+      <controls>
+        <mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+          <mc:Choice Requires="x14">
+            <control shapeId="1025" r:id="rId4" name="Button 1">
+              <controlPr defaultSize="0" print="0" autoFill="0" autoPict="0" macro="[0]!UpdateStyles">
+                <anchor moveWithCells="1" sizeWithCells="1">
+                  <from>
+                    <xdr:col>12</xdr:col>
+                    <xdr:colOff>228600</xdr:colOff>
+                    <xdr:row>0</xdr:row>
+                    <xdr:rowOff>104775</xdr:rowOff>
+                  </from>
+                  <to>
+                    <xdr:col>13</xdr:col>
+                    <xdr:colOff>571500</xdr:colOff>
+                    <xdr:row>2</xdr:row>
+                    <xdr:rowOff>47625</xdr:rowOff>
+                  </to>
+                </anchor>
+              </controlPr>
+            </control>
+          </mc:Choice>
+        </mc:AlternateContent>
+      </controls>
+    </mc:Choice>
+  </mc:AlternateContent>
+  <tableParts count="8">
+    <tablePart r:id="rId5" />
+    <tablePart r:id="rId6" />
+    <tablePart r:id="rId7" />
+    <tablePart r:id="rId8" />
+    <tablePart r:id="rId9" />
+    <tablePart r:id="rId10" />
+    <tablePart r:id="rId11" />
+    <tablePart r:id="rId12" />
+  </tableParts>
+</worksheet>

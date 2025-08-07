@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<connections xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr16"
+  xmlns:xr16="http://schemas.microsoft.com/office/spreadsheetml/2017/revision16">
+  <connection id="1" xr16:uid="{D48B5708-A1A7-419F-A3FB-E6BA3E5FF111}" name="ipl" type="4" refreshedVersion="0" background="1">
+    <webPr xml="1" sourceData="1" url="C:\Users\johntay4\source\repos\Projects\Parser.Text\Samples\ipl.xml" htmlTables="1" htmlFormat="all" />
+  </connection>
+  <connection id="2" xr16:uid="{6C24D60C-105D-4D9E-AAF5-0520FDA3CA00}" keepAlive="1" name="Query - CheckList" description="Connection to the 'CheckList' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=CheckList;Extended Properties=&quot;&quot;" command="SELECT * FROM [CheckList]" />
+  </connection>
+  <connection id="3" xr16:uid="{951B72BE-9233-452C-BF31-DEF52EF35FC0}" keepAlive="1" name="Query - Database" description="Connection to the 'Database' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=Database;Extended Properties=&quot;&quot;" command="SELECT * FROM [Database]" />
+  </connection>
+  <connection id="4" xr16:uid="{00CEE8C7-44FA-44BD-B4B6-154F785C4D1A}" keepAlive="1" name="Query - Index" description="Connection to the 'Index' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=Index;Extended Properties=&quot;&quot;" command="SELECT * FROM [Index]" />
+  </connection>
+  <connection id="5" xr16:uid="{AB44F785-4B84-4FAD-A4B4-1DCB8DC9424D}" keepAlive="1" name="Query - RemoveFromList" description="Connection to the 'RemoveFromList' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=RemoveFromList;Extended Properties=&quot;&quot;" command="SELECT * FROM [RemoveFromList]" />
+  </connection>
+  <connection id="6" xr16:uid="{B0160BB6-9980-4C47-A6C0-58218F30F942}" keepAlive="1" name="Query - Server" description="Connection to the 'Server' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=Server;Extended Properties=&quot;&quot;" command="SELECT * FROM [Server]" />
+  </connection>
+  <connection id="7" xr16:uid="{87BC60B6-E3E3-4AB2-BE69-AFC67312CD54}" keepAlive="1" name="Query - SQL" description="Connection to the 'SQL' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=SQL;Extended Properties=&quot;&quot;" command="SELECT * FROM [SQL]" />
+  </connection>
+  <connection id="8" xr16:uid="{D60EC89B-43F8-4E4E-9150-0639AA08D60E}" keepAlive="1" name="Query - XLTable" description="Connection to the 'XLTable' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=xlTable;Extended Properties=&quot;&quot;" command="SELECT * FROM [XLTable]" />
+  </connection>
+  <connection id="9" xr16:uid="{EAB09C1A-A259-4865-8EA2-B6EB03590C06}" keepAlive="1" name="Query - XLTable(1)" description="Connection to the 'XLTable' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=XLTable;Extended Properties=&quot;&quot;" command="SELECT * FROM [XLTable]" />
+  </connection>
+  <connection id="10" xr16:uid="{C97DA11E-3353-42A9-BED1-B95911755426}" keepAlive="1" name="Query - XLValue" description="Connection to the 'XLValue' query in the workbook." type="5" refreshedVersion="0" background="1">
+    <dbPr connection="Provider=Microsoft.Mashup.OleDb.1;Data Source=$Workbook$;Location=XLValue;Extended Properties=&quot;&quot;" command="SELECT * FROM [XLValue]" />
+  </connection>
+</connections>

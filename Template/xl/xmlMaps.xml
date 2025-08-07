@@ -1,0 +1,58 @@
+<MapInfo xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" SelectionNamespaces="">
+	<Schema ID="Schema1">
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns="">
+			<xsd:element nillable="true" name="Definition">
+				<xsd:complexType>
+					<xsd:sequence minOccurs="0">
+						<xsd:element minOccurs="0" nillable="true" name="Spec" form="unqualified">
+							<xsd:complexType>
+								<xsd:sequence minOccurs="0">
+									<xsd:element minOccurs="0" nillable="true" name="Operations" form="unqualified">
+										<xsd:complexType>
+											<xsd:sequence minOccurs="0">
+												<xsd:element minOccurs="0" maxOccurs="unbounded" nillable="true" name="Operation" form="unqualified">
+													<xsd:complexType>
+														<xsd:all>
+															<xsd:element minOccurs="0" nillable="true" name="Regex" form="unqualified">
+																<xsd:complexType>
+																	<xsd:sequence minOccurs="0">
+																		<xsd:element minOccurs="0" nillable="true" name="Rx" form="unqualified">
+																			<xsd:complexType>
+																				<xsd:attribute name="regex" form="unqualified" type="xsd:string"></xsd:attribute>
+																			</xsd:complexType>
+																		</xsd:element>
+																	</xsd:sequence>
+																</xsd:complexType>
+															</xsd:element>
+															<xsd:element minOccurs="0" nillable="true" name="Replace" form="unqualified">
+																<xsd:complexType>
+																	<xsd:sequence minOccurs="0">
+																		<xsd:element minOccurs="0" nillable="true" name="Node" form="unqualified">
+																			<xsd:complexType>
+																				<xsd:attribute name="lf" form="unqualified" type="xsd:string"></xsd:attribute>
+																				<xsd:attribute name="rw" form="unqualified" type="xsd:string"></xsd:attribute>
+																			</xsd:complexType>
+																		</xsd:element>
+																	</xsd:sequence>
+																</xsd:complexType>
+															</xsd:element>
+														</xsd:all>
+														<xsd:attribute name="type" form="unqualified" type="xsd:string"></xsd:attribute>
+													</xsd:complexType>
+												</xsd:element>
+											</xsd:sequence>
+										</xsd:complexType>
+									</xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</Schema>
+	<Map ID="1" Name="Definition_Map" RootElement="Definition" SchemaID="Schema1" ShowImportExportValidationErrors="false" AutoFit="true" Append="false" PreserveSortAFLayout="true" PreserveFormat="true">
+		<DataBinding FileBinding="true" ConnectionID="1" DataBindingLoadMode="1" />
+	</Map>
+</MapInfo>

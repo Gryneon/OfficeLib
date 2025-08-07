@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="9" xr:uid="{44862436-018E-40CC-B59B-9C83F5A69B9A}" name="ConitionalTable" displayName="ConitionalTable" ref="U2:X21">
+  <tableColumns count="4">
+    <tableColumn id="1" xr3:uid="{EC69CF64-4074-476A-B04E-5BE0C0379D56}" name="Column1" totalsRowLabel="Total" />
+    <tableColumn id="2" xr3:uid="{8AC56160-6459-4A0A-9342-990C97E0F2A3}" name="Column2" />
+    <tableColumn id="3" xr3:uid="{023FCC1E-0A81-41BB-B157-8DB56B8241E4}" name="Column3" />
+    <tableColumn id="4" xr3:uid="{8EACCDFE-5783-49AE-86F7-52700900A8F7}" name="Result" totalsRowFunction="count" dataDxfId="34">
+      <calculatedColumnFormula array="1">AND(ConitionalTable[[#This Row],[Column1]]=BoolYes,ConitionalTable[[#This Row],[Column2]]&lt;&gt;"BadValue",OR(ConitionalTable[[#This Row],[Column3]]&gt;0, NOT(SampleOptionTable[UseCol3])))</calculatedColumnFormula>
+    </tableColumn>
+  </tableColumns>
+  <tableStyleInfo name="LookupTable" showFirstColumn="0" showLastColumn="1" showRowStripes="0" showColumnStripes="0" />
+</table>

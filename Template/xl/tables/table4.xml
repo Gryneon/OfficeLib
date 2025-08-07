@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="xr xr3"
+  xmlns:xr="http://schemas.microsoft.com/office/spreadsheetml/2014/revision"
+  xmlns:xr3="http://schemas.microsoft.com/office/spreadsheetml/2016/revision3" id="10" xr:uid="{D1CDB7F9-3BE6-4567-AD15-1C963EFCE7E9}" name="SampleOptionTable" displayName="SampleOptionTable" ref="Z2:Z3" totalsRowShown="0" headerRowDxfId="33" dataDxfId="32" tableBorderDxfId="31">
+  <tableColumns count="1">
+    <tableColumn id="1" xr3:uid="{EBEEB104-485E-4066-A89C-BF60264C502F}" name="UseCol3" dataDxfId="30" />
+  </tableColumns>
+  <tableStyleInfo name="InputTable" showFirstColumn="0" showLastColumn="0" showRowStripes="0" showColumnStripes="0" />
+</table>

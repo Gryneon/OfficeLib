@@ -1,0 +1,26 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout><v:shapetype id="_x0000_t201" coordsize="21600,21600" o:spt="201"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path shadowok="f" o:extrusionok="f" strokeok="f" fillok="f" o:connecttype="rect"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:shapetype><v:shape id="UseCol3Button" o:spid="_x0000_s2051" type="#_x0000_t201"
+  style='position:absolute;margin-left:1819.5pt;margin-top:62.25pt;width:60pt;
+  height:43.5pt;z-index:1;mso-wrap-style:tight' stroked="f" strokecolor="windowText [64]"
+  o:insetmode="auto">
+  <v:imagedata o:relid="rId1" o:title=""/>
+  <x:ClientData ObjectType="Pict">
+   <x:Anchor>
+    25, 0, 4, 0, 26, 0, 7, 0</x:Anchor>
+   <x:PrintObject>False</x:PrintObject>
+   <x:AutoLine>False</x:AutoLine>
+   <x:FmlaLink>Z3</x:FmlaLink>
+   <x:CF>Pict</x:CF>
+   <x:AutoPict/>
+   <x:MapOCX/>
+  </x:ClientData>
+ </v:shape></xml>
