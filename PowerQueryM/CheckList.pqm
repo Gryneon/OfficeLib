@@ -1,0 +1,4 @@
+(str as text, chk as list) as number => let
+    passlist = List.Transform(chk, each if Text.Contains(str, _, Comparer.OrdinalIgnoreCase) then true else null),
+    lstcount = List.NonNullCount(passlist)
+in lstcount

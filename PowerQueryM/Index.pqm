@@ -1,0 +1,10 @@
+(obj as any, optional row as number, optional col as any) as any => let
+    getcol = (tab as table) as any =>
+        if col <> null then Table.Column(tab, if col is text then col else Table.ColumnNames(tab){col}) else tab,
+    column =
+        if obj is text then getcol(Excel.CurrentWorkbook(){[Name=obj]}[Content]) else
+        if obj is table then getcol(obj) else
+        if obj is list then obj else
+        null,
+    value = if row <> null then column{row} else column
+in value

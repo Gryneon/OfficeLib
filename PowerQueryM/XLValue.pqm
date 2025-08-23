@@ -1,0 +1,1 @@
+(name as text) as any => Index(name, 0, 0)

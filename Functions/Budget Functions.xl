@@ -1,0 +1,39 @@
+GetDebtReps
+=LAMBDA(id,total,
+  LET(
+    rCol, GetDebtRCol(id, RepTransTable[Amount]),
+    rSUM, SUM(rCol),
+    sSUM, GetDebtSAmt(id),
+    (total - sSUM) / rSUM,
+  )
+)
+
+GetDebtFreq
+=LAMBDA(id,
+  LET(
+    rCol, GetDebtRCol(id, RepTransTable[Frequency]),
+    SWITCH(rCol,
+      "M", 30,
+      "6M", 180,
+      rCol
+    )
+  )
+)
+
+GetDebtSAmt
+=LAMBDA(id,
+  LET(
+    sdID_Col, SingleTransTable[DebtID],
+    sAmt_Col, SingleTransTable[Amount],
+    sFILT, FILTER(sAmt_Col,sdID_Col = id, 0),
+    SUM(sFILT)
+  )
+)
+
+GetDebtRCol
+=LAMBDA(id,col,
+  LET(
+    sdID_Col, SingleTransTable[DebtID],
+    FILTER(col,sdID_Col = id, 0),
+  )
+)

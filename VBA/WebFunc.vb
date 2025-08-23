@@ -4,7 +4,7 @@ Option Compare Text
 Option Base 1
 
 'Web Requests Function Library
-'Version 1.1.0
+'Version 1.0.1
 
 'Imports
 'Microsoft WinHTTP Services, version 5.1
@@ -14,7 +14,6 @@ Option Base 1
 'History
 ' 1.0.0 - Initial Verion
 ' 1.0.1 - Added SendSQLCommand
-' 1.1.0 - Added UploadTextViaFTP
 
 Public Function MakeWebRequest(ByVal Method As String, ByVal URL As String, PostData) As String
     ' make sure to include the Microsoft WinHTTP Services in the project
@@ -82,25 +81,18 @@ Public Function ParseJSON(data As String) As Object
 
 End Function
 
-Public Sub SendSQLCommand(server As String, database As String, sqlQuery As String, responseCell As String)
+Public Function SendSQLCommand(server As String, database As String, sqlQuery As String)
 
   Dim connectionString As String
-  Dim connectObj As ADODB.Connection
-  Dim commandObj As ADODB.Command
+  Dim connectObj As New ADODB.Connection
+  Dim commandObj As New ADODB.Command
   Dim rowsAffected As Long
   
-  connectionString = "Provider=MSOLEDBSQL;" & _
-                     "Server=" & server & ";" & _
-                     "Database=" & database & ";" & _
-                     "Integrated Security=SSPI;" & _
-                     "TrustServerCertificate=Yes;" & _
-                     "Encrypt=No;"
+  connectionString = "Provider=SQLOLEDB;Data Source=" & server & ";Initial Catalog=" & database & ";Integrated Security=SSPI;"
   
   On Error GoTo ErrorHandler
   
-  Set connectObj = New ADODB.Connection
   connectObj.Open connectionString
-  Set commandObj = New ADODB.Command
   With commandObj
     .ActiveConnection = connectObj
     .CommandText = sqlQuery
@@ -111,9 +103,9 @@ Public Sub SendSQLCommand(server As String, database As String, sqlQuery As Stri
   Set commandObj = Nothing
   Set connectObj = Nothing
   
-  Range(responseCell).Value = rowsAffected & " Rows Affected"
+  Range("SQLResponseCell").Text = rowsAffected & " Rows Affected"
   
-Exit Sub
+Exit Function
 
 ErrorHandler:
   MsgBox "Error: " & Err.Description, vbCritical
@@ -123,41 +115,7 @@ ErrorHandler:
   Set commandObj = Nothing
   Set connectObj = Nothing
   
-  Range(responseCell).Value = "Error sending data"
+  Range("SQLResponseCell").Text = "Error sending data"
   
-End Sub
-
-Public Sub UploadTextViaFTP(server As String, user As String, pass As String, file As String, content As String)
-    Dim TempFile As String, FTPCommandFile As String
-    Dim fNum As Integer
-    
-    ' Create temporary text file
-    TempFile = Environ$("TEMP") & "\temp_upload.txt"
-    fNum = FreeFile
-    Open TempFile For Output As #fNum
-    Print #fNum, content
-    Close #fNum
-    
-    ' Create temporary FTP command file
-    FTPCommandFile = Environ$("TEMP") & "\ftp_commands.txt"
-    fNum = FreeFile
-    Open FTPCommandFile For Output As #fNum
-    Print #fNum, "open " & server
-    Print #fNum, user
-    Print #fNum, pass
-    Print #fNum, "binary"
-    Print #fNum, "put " & TempFile & " " & file
-    Print #fNum, "bye"
-    Close #fNum
-    
-    ' Run FTP command
-    Shell "cmd.exe /c ftp -s:""" & FTPCommandFile & """", vbNormalFocus
-    
-    ' Optional: wait a bit then clean up
-    Application.Wait Now + TimeValue("0:00:05")
-    Kill TempFile
-    Kill FTPCommandFile
-    
-    MsgBox "File uploaded to FTP server " & server, vbInformation
-End Sub
+End Function
 

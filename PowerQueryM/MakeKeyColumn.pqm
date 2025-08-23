@@ -1,0 +1,9 @@
+let
+    MakeKeyCol = (src as table) as table => let
+        combine = Table.CombineColumns(src,{"Type", "Brand", "Model"},Combiner.CombineTextByDelimiter("~", QuoteStyle.None),"Key2"),
+        addcol = Table.AddColumn(combine, "Key", each TextJoinTrim([Key2]), type text),
+        remove = Table.RemoveColumns(addcol,{"Key2"}),
+        reorder = Table.ReorderColumns(remove,{"Key", "Count"}),
+        replace = Table.ReplaceValue(reorder, "", AssetNoName, Replacer.ReplaceValue, {"Key"})
+    in replace
+in MakeKeyCol
