@@ -34,9 +34,9 @@ End Sub
 
 
 Public Sub SurroundIfErrorBlock()
-  SurroundBlock "LET|IFERROR", RXR_IfError
+  Call SurroundBlock("LET|IFERROR", RXR_IfError)
 End Sub
 
 Public Sub SurroundLetBlock()
-  SurroundBlock "LET", RXR_Let
+  Call SurroundBlock("LET", RXR_Let)
 End Sub

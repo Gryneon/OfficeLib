@@ -4,34 +4,35 @@ Option Compare Text
 Option Base 1
 
 '`Lookup Function Library
-'Version 1.1.3
+'Version 1.1.4
 
 'History
 ' 1.1.2 - Added XLCellLookup function
 ' 1.1.3 - Added XLTableRow, XLFindRow, XLFindTableRow function
+' 1.1.4 - Updated GLookup
 'Current
 
-Public Function XLIntersect(ByVal R1, ByVal R2)
+Public Function XLIntersect(R1, R2)
   Set XLIntersect = Intersect(R1, R2)
 End Function
 
-Public Function XLEntireRow(ByVal cell)
+Public Function XLEntireRow(cell)
   Set XLEntireRow = cell.EntireRow
 End Function
 
-Public Function XLCellLookup(ByVal RowCell, ByVal ColCell)
+Public Function XLCellLookup(RowCell, ColCell)
   Set XLCellLookup = Intersect(RowCell.EntireRow, ColCell.EntireColumn)
 End Function
 
-Public Function XLEntireColumn(ByVal cell As Range) As Range
+Public Function XLEntireColumn(cell As Range) As Range
   Set XLEntireColumn = cell.EntireColumn
 End Function
 
-Public Function XLTableRow(ByVal cell As Range, ByVal table As String) As Range
+Public Function XLTableRow(cell As Range, ByVal table As String) As Range
   Set XLTableRow = Intersect(cell, Range(table))
 End Function
 
-Public Function XLFindRow(ByVal findText As String, ByVal col As Range) As Range
+Public Function XLFindRow(ByVal findText As String, col As Range) As Range
   Set XLFindRow = col.Find(findText, LookIn:=xlValues, MatchCase:=True)
 End Function
 
@@ -40,17 +41,22 @@ Public Function XLFindTableRow(findText As String, col As Range, Optional table 
   Set XLFindTableRow = Intersect(XLFindRow(findText, col), table.DataBodyRange)
 End Function
  
-Public Function GLookup(ByRef table, ByVal RVal, ByVal row, ByVal CVal, ByVal col)
-  On Error GoTo Invalid
+Public Function GLookup(ByVal RVal As Variant, KeyColumn As Range, ByVal CVal As Variant, ByVal HeaderRow As Range) As Variant
+  On Error GoTo NotFound
 
-  Dim r As Range: Set r = r.Find(RVal, LookIn:=row).EntireColumn
-  Dim C As Range: Set C = C.Find(CVal, LookIn:=col).EntireRow
+  Dim RCell As Range: Set RCell = KeyColumn.Find(RVal, LookIn:=xlValues, LookAt:=xlWhole)
+  Dim CCell As Range: Set CCell = HeaderRow.Find(CVal, LookIn:=xlValues, LookAt:=xlWhole)
   
-  Set GLookup = Intersect(r, C)
+  If RCell Is Nothing Or CCell Is Nothing Then GoTo NotFound
+  
+  Dim R As Range: Set R = RCell.EntireRow
+  Dim C As Range: Set C = CCell.EntireColumn
+  
+  GLookup = Intersect(R, C).Value
  
 Exit Function
-Invalid:
-  ErrorMsg
+NotFound:
+  GLookup = CVErr(xlErrNA)
 End Function
 
 Public Function RowNum(ByRef HeaderCell)
