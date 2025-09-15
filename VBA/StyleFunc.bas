@@ -4,12 +4,13 @@ Option Compare Text
 Option Base 1
 
 '`Style Function Library
-'Version 1.0.9
+'Version 1.1.0
 
 'History
-' 1.0.7 - Added SelectColumn' 1.0.7 - Added SelectColumn
+' 1.0.7 - Added SelectColumn'
 ' 1.0.8 - Added Full Style Application
 ' 1.0.9 - Added MSize (Monospace Size)
+' 1.1.0 - Added SelectColumn Error Proofing
 
 'Current
 
@@ -19,6 +20,9 @@ Private ActiveFontSet As New ActiveFonts
 
 Public Sub SelectColumn()
   Dim Ref As Range: Set Ref = Selection.Range
+  
+  If Ref.ListObject Is Nothing Then Exit Sub
+  
   Set Ref = Intersect(Ref.ListObject.DataBodyRange, Ref.EntireColumn)
   Ref.Select
 End Sub
