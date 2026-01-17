@@ -4,14 +4,13 @@ Option Compare Text
 Option Base 1
 
 '`Style Function Library
-'Version 1.1.1
+'Version 1.0.10
 
 'History
 ' 1.0.7 - Added SelectColumn
 ' 1.0.8 - Added Full Style Application
-' 1.0.9 - Added MSize (Monospace Size)
-' 1.1.0 - Added SelectColumn Error Proofing
-' 1.1.1 - Fixed Selection.Range Syntax
+' 1.0.9 - Added Error-Proofing to SelectColumn
+' 1.0.10 - Added Error-Proofing to TableColumn
 
 'Current
 
@@ -20,15 +19,17 @@ Private Const DefTitleText = "Added Title"
 Private ActiveFontSet As New ActiveFonts
 
 Public Sub SelectColumn()
-  Dim Ref As Range: Set Ref = Selection.Range
-
-  If Ref.ListObject Is Nothing Then Exit Sub
-
-  Set Ref = Intersect(Ref.ListObject.DataBodyRange, Ref.EntireColumn)
-  Ref.Select
+  Dim Sel As Range
+  Dim InObj As Boolean
+  
+  If (ActiveCell.ListObject Is Nothing) Then Exit Sub
+  
+  Set Sel = Intersect(ActiveCell.ListObject.DataBodyRange, ActiveCell.EntireColumn)
+  Sel.Select
 End Sub
 
 Private Sub TableColumn(ByVal Typ As String, ByRef Ref As Range, Optional ByVal Body As String = "Cell", Optional ByVal Head As String = "Hd")
+  If Ref.ListObject Is Nothing Then Exit Sub
   Dim Bd: Set Bd = Intersect(Ref.ListObject.DataBodyRange, Ref.EntireColumn)
   Dim Hd: Set Hd = Intersect(Ref.ListObject.HeaderRowRange, Ref.EntireColumn)
   Bd.Style = Typ + Body
@@ -36,44 +37,44 @@ Private Sub TableColumn(ByVal Typ As String, ByRef Ref As Range, Optional ByVal 
 End Sub
 
 Public Sub LookupColumn()
-  TableColumn "Lkp", Selection
+  TableColumn "Lkp", ActiveCell
 End Sub
 
 Public Sub CalcColumn()
-  TableColumn "Calc", Selection
+  TableColumn "Calc", ActiveCell
 End Sub
 
 Public Sub DeacColumn()
-  TableColumn "Deac", Selection
+  TableColumn "Deac", ActiveCell
 End Sub
 
 Public Sub InputColumn()
-  TableColumn "Inp", Selection
+  TableColumn "Inp", ActiveCell
 End Sub
 
 Public Sub InternalColumn()
-  TableColumn "Int", Selection
+  TableColumn "Int", ActiveCell
 End Sub
 
 Public Sub ErrorColumn()
-  TableColumn "Err", Selection
+  TableColumn "Err", ActiveCell
 End Sub
 
 Public Sub QueryColumn()
-  TableColumn "Que", Selection
+  TableColumn "Que", ActiveCell
 End Sub
 
 Public Sub FixColumn()
   Dim Sel As Style, STyp As String, HTyp As String, BTyp As String
   Set Sel = Selection.Style
-
+  
   If Sel Like "Act*" Or Sel = DefStyle Then Exit Sub
   If Sel Like "Calc*" Or Sel Like "Deac*" Then
     STyp = Left(Sel, 4)
   Else
     STyp = Left(Sel, 3)
   End If
-
+  
   If Sel Like "*HdKey" Then
     HTyp = "HdKey"
     BTyp = "Key"
@@ -87,9 +88,9 @@ Public Sub FixColumn()
     HTyp = "Hd"
     BTyp = "Val"
   End If
-
-  TableColumn STyp, Selection, BTyp, HTyp
-
+  
+  TableColumn STyp, ActiveCell, BTyp, HTyp
+  
 End Sub
 
 Public Sub AddTitle()
@@ -117,12 +118,12 @@ Private Sub LoadFontColorPatterns()
   Dim notes() As String
   Dim sty As Style
   Dim count As Integer, x As Integer
-
+  
   Set column = KeySheet.Range("KeyTable[StyleName]")
   count = column.count
-
+  
   For x = 1 To count
-
+  
     Set cell = KeySheet.Range("B" & (x + 2))
     Set noter = KeySheet.Range("H" & (x + 2))
     Set font = KeySheet.Range("J" & (x + 2))
@@ -131,48 +132,48 @@ Private Sub LoadFontColorPatterns()
     note = noter.Value
     notes = Split(note, ",")
     lockval = locked.Value
-
+    
     Set sty = ActiveWorkbook.Styles(Name)
-
+    
     sty.locked = (lockval = True)
     sty.Interior.Color = cell.Interior.Color
     sty.font.Name = font.Value
     sty.font.Color = cell.font.Color
-
+    
     sty.IncludeFont = True
     sty.IncludeBorder = True
     sty.IncludePatterns = True
     sty.IncludeProtection = True
     sty.IncludeNumber = False
     sty.IncludeAlignment = False
-
+    
     If lockval = "IGNORE" Then sty.IncludeProtection = False
-
+    
     'Add special notes to style
     For Each cnote In notes
       cnote = Trim(cnote)
       Select Case cnote
-
+      
         Case "Pattern Set"
           sty.Interior.Pattern = cell.Interior.Pattern
           sty.Interior.PatternColor = cell.Interior.PatternColor
         Case "P Set"
           sty.Interior.Pattern = cell.Interior.Pattern
           sty.Interior.PatternColor = cell.Interior.PatternColor
-
+        
         Case "Txt Fmt"
           sty.NumberFormat = "@"
           sty.IncludeNumber = True
-
+          
         Case "Date Format"
           sty.NumberFormat = "mm-dd-yy"
           sty.IncludeNumber = True
-
+          
         Case "Italics"
           sty.font.Italic = True
         Case "Ital"
           sty.font.Italic = True
-
+          
         Case "Cent HV"
           sty.VerticalAlignment = xlVAlignCenter
           sty.HorizontalAlignment = xlVAlignCenter
@@ -181,17 +182,17 @@ Private Sub LoadFontColorPatterns()
           sty.VerticalAlignment = xlVAlignCenter
           sty.HorizontalAlignment = xlVAlignCenter
           sty.IncludeAlignment = True
-
+          
         Case "16 Pt"
           sty.font.Size = ActiveFontSet.TSize
-
+        
         Case "Normal Set"
           sty.IncludeBorder = False
           sty.Interior.Color = xlNone
-
+          
       End Select
     Next cnote
-
+    
   Next x
 
 End Sub
@@ -199,34 +200,31 @@ End Sub
 Public Sub UpdateStyles()
   RemoveAllDefStyles
   'All Styles
-  Dim Item As Style
-  For Each Item In ActiveWorkbook.Styles: With Item
+  Dim Item As Style: For Each Item In ActiveWorkbook.Styles: With Item
     If EndsWith(.Name, "Title") Then
       .font.Size = ActiveFontSet.TSize
     ElseIf EndsWith(.Name, Array("Hd", "HdKey", "Head")) Then
       .font.Size = ActiveFontSet.HSize
     ElseIf StartsWith(.Name, "Act") Or EndsWith(.Name, Array("Val", "Date")) Or .Name = DefStyle Then
       .font.Size = ActiveFontSet.BSize
-    ElseIf .Name = "xMono" Or EndsWith(.Name, "Val") Or EndsWith(.Name, "Date") Then
-      .font.Size = ActiveFontSet.MSize
     End If
-
+    
     'Font Setter Styles
     If StartsWith(.Name, "x") Then
       .font.Name = Range("FontTable[" & Right(.Name, 4) & "]")
     End If
-
+    
   End With: Next Item
-
+  
   Dim TItem As TableStyle, TElement As TableStyleElement
   For Each TItem In ActiveWorkbook.TableStyles
     Dim TName As String: TName = TItem.Name
     Set TElement = TItem.TableStyleElements.Item(xlWholeTable)
     'Dim ListSheet.Range ("TableStyleTable[StyleName]")
   Next TItem
-
+  
   LoadFontColorPatterns
-
+  
 End Sub
 
 Public Sub StyleWriter()
@@ -235,7 +233,7 @@ Public Sub StyleWriter()
   Dim Sel As Range:        Set Sel = Selection
   Dim Cols As New Collection
   Dim Vals As New Collection
-
+  
   With Cols
     .add "Name"
     .add "BGColor"
@@ -245,16 +243,16 @@ Public Sub StyleWriter()
     .add "Italics"
     .add "NumStyle"
   End With
-
+  
   Dim x: For x = 1 To Cols.count
     Sel = Cols(x)
     Set Sel = Sel.Offset(0, 1)
   Next x
-
+  
   Set Sel = Sel.Offset(1, -Cols.count)
-
+  
   For Each WriteStyle In ActiveWorkbook.Styles
-
+    
     With WriteStyle
       Vals.add .Name
       Vals.add .Interior.Color
@@ -264,15 +262,15 @@ Public Sub StyleWriter()
       Vals.add .font.Italic
       Vals.add .NumberFormat
     End With
-
+    
     For x = 1 To Cols.count
       Sel = Vals(x)
       Set Sel = Sel.Offset(0, 1)
     Next x
-
+    
     Set Sel = Sel.Offset(1, -Cols.count)
     Set Vals = New Collection
-
+    
   Next WriteStyle
 
 End Sub

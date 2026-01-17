@@ -168,6 +168,9 @@
 			"textMateThemeToken.constant.other.option": "#569cd6",
 			"textMateThemeToken.constant.character.escape": "#d7ba7d",
 			"textMateThemeToken.entity.name.label": "#C8C8C8"
-		}
+		},
+		"workbench.commandPalette.experimental.suggestCommands": true,
+		"telemetry.editStats.showStatusBar": false,
+		"telemetry.editStats.showDecorations": true
 	}
 }
